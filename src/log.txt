@@ -1,0 +1,237 @@
+FrameworkServlet 'spring': initialization started
+Refreshing WebApplicationContext for namespace 'spring-servlet': startup date [Mon Jun 19 11:03:35 IST 2017]; root of context hierarchy
+Loading XML bean definitions from ServletContext resource [/WEB-INF/spring-servlet.xml]
+Mapped "{[/applyeducationloan/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyEducationLoanController.addEducatiopnLoan(com.cts.vo.ApplyEducationLoanVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/indexinieduloan],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyEducationLoanController.listBooks()
+Mapped "{[/indexinithomeloan],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyHomeLoanController.listBooks()
+Mapped "{[/applyhomeloan/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyHomeLoanController.addHomeLoan(com.cts.vo.ApplyHomeLoanVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/home],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.initHome()
+Mapped "{[/indexinit],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.initView()
+Mapped "{[/transaction/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.initiateTransaction(com.cts.vo.TransactionVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/viewtransaction],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.InitTransactionView()
+Mapped "{[/view],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ViewTransactionController.searchUserTransaction(java.lang.String,java.lang.String,com.cts.vo.TransactionVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+HV000001: Hibernate Validator 4.3.1.Final
+HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+HHH000412: Hibernate Core {4.3.5.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/C:/Users/577547/workspace/.metadata/.plugins/org.eclipse.wst.server.core/tmp0/wtpwebapps/BMS/WEB-INF/classes/hibernate.cfg.xml
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: cts.userdetails
+HHH000037: Columns: [accountholdername, accountnumber, accountbalance, accounttype]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: cts.educationloandetails
+HHH000037: Columns: [education_loan_id, edu_loan_amount, account_number, course_name, father_name, edu_loan_account_number, edu_loan_duration, father_annual_income, id_card_number, edu_loan_apply_date, course_fee]
+HHH000108: Foreign keys: [fk_dxkp6e9kpk0k80h1jl1c9euel]
+HHH000126: Indexes: [fk_dxkp6e9kpk0k80h1jl1c9euel, primary]
+HHH000261: Table found: cts.homeloandetails
+HHH000037: Columns: [account_number, exp_current_comp, home_loan_id, home_loan_account_number, comp_name, loan_amount, designation, loan_duration, total_exp, loan_apply_date, annual_income]
+HHH000108: Foreign keys: [fk_jume82c48b11rojhwgj9qfsle]
+HHH000126: Indexes: [fk_jume82c48b11rojhwgj9qfsle, primary]
+HHH000261: Table found: cts.transaction_details
+HHH000037: Columns: [transaction_id, account_number, transaction_amount, transaction_description, transaction_type]
+HHH000108: Foreign keys: [fk_1vqxecxhha071qc62stq8pf1w]
+HHH000126: Indexes: [fk_1vqxecxhha071qc62stq8pf1w, primary]
+HHH000232: Schema update complete
+Using DataSource [org.apache.commons.dbcp2.BasicDataSource@ee5642] of Hibernate SessionFactory for HibernateTransactionManager
+FrameworkServlet 'spring': initialization completed in 2593 ms
+start
+Transaction Controller Strated
+Apply Transaction has result binding error
+end
+start
+Transaction Controller Strated
+TransactionService called
+end
+Transaction search has form binding error!!
+start
+Transaction Search Controller Intantiated!
+end
+Closing WebApplicationContext for namespace 'spring-servlet': startup date [Mon Jun 19 11:03:35 IST 2017]; root of context hierarchy
+@TestExecutionListeners is not present for class [class com.cts.TestCase.ViewTransactionTest]: using defaults.
+Loading XML bean definitions from class path resource [spring-dispatcher-servlet-test.xml]
+Refreshing org.springframework.context.support.GenericApplicationContext@5d012c: startup date [Mon Jun 19 11:09:53 IST 2017]; root of context hierarchy
+Mapped "{[/indexinieduloan],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyEducationLoanController.listBooks()
+Mapped "{[/applyeducationloan/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyEducationLoanController.addEducatiopnLoan(com.cts.vo.ApplyEducationLoanVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/indexinithomeloan],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyHomeLoanController.listBooks()
+Mapped "{[/applyhomeloan/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyHomeLoanController.addHomeLoan(com.cts.vo.ApplyHomeLoanVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/indexinit],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.initView()
+Mapped "{[/home],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.initHome()
+Mapped "{[/transaction/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.initiateTransaction(com.cts.vo.TransactionVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/viewtransaction],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.InitTransactionView()
+Mapped "{[/view],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ViewTransactionController.searchUserTransaction(java.lang.String,java.lang.String,com.cts.vo.TransactionVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+HV000001: Hibernate Validator 4.3.1.Final
+HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+HHH000412: Hibernate Core {4.3.5.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/C:/Users/577547/workspace/BMS/build/classes/hibernate.cfg.xml
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: cts.userdetails
+HHH000037: Columns: [accountholdername, accountnumber, accountbalance, accounttype]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: cts.educationloandetails
+HHH000037: Columns: [education_loan_id, edu_loan_amount, account_number, course_name, father_name, edu_loan_account_number, edu_loan_duration, father_annual_income, id_card_number, edu_loan_apply_date, course_fee]
+HHH000108: Foreign keys: [fk_dxkp6e9kpk0k80h1jl1c9euel]
+HHH000126: Indexes: [fk_dxkp6e9kpk0k80h1jl1c9euel, primary]
+HHH000261: Table found: cts.homeloandetails
+HHH000037: Columns: [account_number, exp_current_comp, home_loan_id, home_loan_account_number, comp_name, loan_amount, designation, loan_duration, total_exp, loan_apply_date, annual_income]
+HHH000108: Foreign keys: [fk_jume82c48b11rojhwgj9qfsle]
+HHH000126: Indexes: [fk_jume82c48b11rojhwgj9qfsle, primary]
+HHH000261: Table found: cts.transaction_details
+HHH000037: Columns: [transaction_id, account_number, transaction_amount, transaction_description, transaction_type]
+HHH000108: Foreign keys: [fk_1vqxecxhha071qc62stq8pf1w]
+HHH000126: Indexes: [fk_1vqxecxhha071qc62stq8pf1w, primary]
+HHH000232: Schema update complete
+Using DataSource [org.apache.commons.dbcp2.BasicDataSource@1d0a0] of Hibernate SessionFactory for HibernateTransactionManager
+Closing org.springframework.context.support.GenericApplicationContext@5d012c: startup date [Mon Jun 19 11:09:53 IST 2017]; root of context hierarchy
+@TestExecutionListeners is not present for class [class com.cts.TestCase.TransactionTestCase]: using defaults.
+Loading XML bean definitions from class path resource [spring-dispatcher-servlet-test.xml]
+Refreshing org.springframework.context.support.GenericApplicationContext@82d64: startup date [Mon Jun 19 11:10:06 IST 2017]; root of context hierarchy
+Mapped "{[/indexinieduloan],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyEducationLoanController.listBooks()
+Mapped "{[/applyeducationloan/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyEducationLoanController.addEducatiopnLoan(com.cts.vo.ApplyEducationLoanVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/indexinithomeloan],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyHomeLoanController.listBooks()
+Mapped "{[/applyhomeloan/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyHomeLoanController.addHomeLoan(com.cts.vo.ApplyHomeLoanVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/indexinit],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.initView()
+Mapped "{[/home],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.initHome()
+Mapped "{[/transaction/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.initiateTransaction(com.cts.vo.TransactionVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/viewtransaction],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.InitTransactionView()
+Mapped "{[/view],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ViewTransactionController.searchUserTransaction(java.lang.String,java.lang.String,com.cts.vo.TransactionVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+HV000001: Hibernate Validator 4.3.1.Final
+HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+HHH000412: Hibernate Core {4.3.5.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/C:/Users/577547/workspace/BMS/build/classes/hibernate.cfg.xml
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: cts.userdetails
+HHH000037: Columns: [accountholdername, accountnumber, accountbalance, accounttype]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: cts.educationloandetails
+HHH000037: Columns: [education_loan_id, edu_loan_amount, account_number, course_name, father_name, edu_loan_account_number, edu_loan_duration, father_annual_income, id_card_number, edu_loan_apply_date, course_fee]
+HHH000108: Foreign keys: [fk_dxkp6e9kpk0k80h1jl1c9euel]
+HHH000126: Indexes: [fk_dxkp6e9kpk0k80h1jl1c9euel, primary]
+HHH000261: Table found: cts.homeloandetails
+HHH000037: Columns: [account_number, exp_current_comp, home_loan_id, home_loan_account_number, comp_name, loan_amount, designation, loan_duration, total_exp, loan_apply_date, annual_income]
+HHH000108: Foreign keys: [fk_jume82c48b11rojhwgj9qfsle]
+HHH000126: Indexes: [fk_jume82c48b11rojhwgj9qfsle, primary]
+HHH000261: Table found: cts.transaction_details
+HHH000037: Columns: [transaction_id, account_number, transaction_amount, transaction_description, transaction_type]
+HHH000108: Foreign keys: [fk_1vqxecxhha071qc62stq8pf1w]
+HHH000126: Indexes: [fk_1vqxecxhha071qc62stq8pf1w, primary]
+HHH000232: Schema update complete
+Using DataSource [org.apache.commons.dbcp2.BasicDataSource@1d0a0] of Hibernate SessionFactory for HibernateTransactionManager
+Closing org.springframework.context.support.GenericApplicationContext@82d64: startup date [Mon Jun 19 11:10:06 IST 2017]; root of context hierarchy
+@TestExecutionListeners is not present for class [class com.cts.TestCase.TransactionTestCase]: using defaults.
+Loading XML bean definitions from class path resource [spring-dispatcher-servlet-test.xml]
+Refreshing org.springframework.context.support.GenericApplicationContext@6a3f77: startup date [Mon Jun 19 11:10:41 IST 2017]; root of context hierarchy
+Mapped "{[/indexinieduloan],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyEducationLoanController.listBooks()
+Mapped "{[/applyeducationloan/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyEducationLoanController.addEducatiopnLoan(com.cts.vo.ApplyEducationLoanVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/indexinithomeloan],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyHomeLoanController.listBooks()
+Mapped "{[/applyhomeloan/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyHomeLoanController.addHomeLoan(com.cts.vo.ApplyHomeLoanVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/transaction/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.initiateTransaction(com.cts.vo.TransactionVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/viewtransaction],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.InitTransactionView()
+Mapped "{[/indexinit],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.initView()
+Mapped "{[/home],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.initHome()
+Mapped "{[/view],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ViewTransactionController.searchUserTransaction(java.lang.String,java.lang.String,com.cts.vo.TransactionVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+HV000001: Hibernate Validator 4.3.1.Final
+HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+HHH000412: Hibernate Core {4.3.5.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/C:/Users/577547/workspace/BMS/build/classes/hibernate.cfg.xml
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: cts.userdetails
+HHH000037: Columns: [accountholdername, accountnumber, accountbalance, accounttype]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: cts.educationloandetails
+HHH000037: Columns: [education_loan_id, edu_loan_amount, account_number, course_name, father_name, edu_loan_account_number, edu_loan_duration, father_annual_income, id_card_number, edu_loan_apply_date, course_fee]
+HHH000108: Foreign keys: [fk_dxkp6e9kpk0k80h1jl1c9euel]
+HHH000126: Indexes: [fk_dxkp6e9kpk0k80h1jl1c9euel, primary]
+HHH000261: Table found: cts.homeloandetails
+HHH000037: Columns: [account_number, exp_current_comp, home_loan_id, home_loan_account_number, comp_name, loan_amount, designation, loan_duration, total_exp, loan_apply_date, annual_income]
+HHH000108: Foreign keys: [fk_jume82c48b11rojhwgj9qfsle]
+HHH000126: Indexes: [fk_jume82c48b11rojhwgj9qfsle, primary]
+HHH000261: Table found: cts.transaction_details
+HHH000037: Columns: [transaction_id, account_number, transaction_amount, transaction_description, transaction_type]
+HHH000108: Foreign keys: [fk_1vqxecxhha071qc62stq8pf1w]
+HHH000126: Indexes: [fk_1vqxecxhha071qc62stq8pf1w, primary]
+HHH000232: Schema update complete
+Using DataSource [org.apache.commons.dbcp2.BasicDataSource@1f80d55] of Hibernate SessionFactory for HibernateTransactionManager
+Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@118c260]; rollback [true]
+Rolled back transaction after test execution for test context [[TestContext@17aec8c testClass = TransactionTestCase, locations = array<String>['classpath:spring-dispatcher-servlet-test.xml'], testInstance = com.cts.TestCase.TransactionTestCase@19632d1, testMethod = testTransaction@TransactionTestCase, testException = [null]]]
+Closing org.springframework.context.support.GenericApplicationContext@6a3f77: startup date [Mon Jun 19 11:10:41 IST 2017]; root of context hierarchy
+@TestExecutionListeners is not present for class [class com.cts.TestCase.ViewTransactionTest]: using defaults.
+Loading XML bean definitions from class path resource [spring-dispatcher-servlet-test.xml]
+Refreshing org.springframework.context.support.GenericApplicationContext@d3bd8b: startup date [Mon Jun 19 11:11:43 IST 2017]; root of context hierarchy
+Mapped "{[/indexinieduloan],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyEducationLoanController.listBooks()
+Mapped "{[/applyeducationloan/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyEducationLoanController.addEducatiopnLoan(com.cts.vo.ApplyEducationLoanVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/indexinithomeloan],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyHomeLoanController.listBooks()
+Mapped "{[/applyhomeloan/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ApplyHomeLoanController.addHomeLoan(com.cts.vo.ApplyHomeLoanVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/indexinit],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.initView()
+Mapped "{[/home],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.initHome()
+Mapped "{[/transaction/add],methods=[POST],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.initiateTransaction(com.cts.vo.TransactionVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+Mapped "{[/viewtransaction],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.PerformTransactionController.InitTransactionView()
+Mapped "{[/view],methods=[GET],params=[],headers=[],consumes=[],produces=[application/json],custom=[]}" onto public org.springframework.web.servlet.ModelAndView com.cts.controller.ViewTransactionController.searchUserTransaction(java.lang.String,java.lang.String,com.cts.vo.TransactionVo,org.springframework.validation.BindingResult,java.util.Map<java.lang.String, java.lang.Object>)
+HV000001: Hibernate Validator 4.3.1.Final
+HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+HHH000412: Hibernate Core {4.3.5.Final}
+HHH000206: hibernate.properties not found
+HHH000021: Bytecode provider name : javassist
+HHH000044: Configuring from URL: file:/C:/Users/577547/workspace/BMS/build/classes/hibernate.cfg.xml
+HHH000041: Configured SessionFactory: null
+HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+HHH000399: Using default transaction strategy (direct JDBC transactions)
+HHH000397: Using ASTQueryTranslatorFactory
+HHH000228: Running hbm2ddl schema update
+HHH000102: Fetching database metadata
+HHH000396: Updating schema
+HHH000261: Table found: cts.userdetails
+HHH000037: Columns: [accountholdername, accountnumber, accountbalance, accounttype]
+HHH000108: Foreign keys: []
+HHH000126: Indexes: [primary]
+HHH000261: Table found: cts.educationloandetails
+HHH000037: Columns: [education_loan_id, edu_loan_amount, account_number, course_name, father_name, edu_loan_account_number, edu_loan_duration, father_annual_income, id_card_number, edu_loan_apply_date, course_fee]
+HHH000108: Foreign keys: [fk_dxkp6e9kpk0k80h1jl1c9euel]
+HHH000126: Indexes: [fk_dxkp6e9kpk0k80h1jl1c9euel, primary]
+HHH000261: Table found: cts.homeloandetails
+HHH000037: Columns: [account_number, exp_current_comp, home_loan_id, home_loan_account_number, comp_name, loan_amount, designation, loan_duration, total_exp, loan_apply_date, annual_income]
+HHH000108: Foreign keys: [fk_jume82c48b11rojhwgj9qfsle]
+HHH000126: Indexes: [fk_jume82c48b11rojhwgj9qfsle, primary]
+HHH000261: Table found: cts.transaction_details
+HHH000037: Columns: [transaction_id, account_number, transaction_amount, transaction_description, transaction_type]
+HHH000108: Foreign keys: [fk_1vqxecxhha071qc62stq8pf1w]
+HHH000126: Indexes: [fk_1vqxecxhha071qc62stq8pf1w, primary]
+HHH000232: Schema update complete
+Using DataSource [org.apache.commons.dbcp2.BasicDataSource@9778cd] of Hibernate SessionFactory for HibernateTransactionManager
+Began transaction (1): transaction manager [org.springframework.orm.hibernate4.HibernateTransactionManager@1b66b08]; rollback [true]
+Rolled back transaction after test execution for test context [[TestContext@c20bb4 testClass = ViewTransactionTest, locations = array<String>['classpath:spring-dispatcher-servlet-test.xml'], testInstance = com.cts.TestCase.ViewTransactionTest@2bd7c8, testMethod = testRetrieveTransactionDetails@ViewTransactionTest, testException = [null]]]
+Closing org.springframework.context.support.GenericApplicationContext@d3bd8b: startup date [Mon Jun 19 11:11:43 IST 2017]; root of context hierarchy
